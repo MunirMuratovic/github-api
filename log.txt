@@ -1,0 +1,20 @@
+Write a web application that:
+* Reads a collection of data from any REST API source. It can be Facebook, Twitter, GitHub, Office365 or anything you like
+* Present that data on the application front-end (in HTML form), 
+* Make some changes in the collection via web page
+* Save the changes into JSON 
+* Write JSON in a file on disk
+* Bonus: Authentication with REST API source
+
+Plan:
+* Get JSON data with basic query (get repos with more than 100000 stars) and convert it into object usable inside an app
+* Starting state of the app is empty object/array
+* State is populated with data from API call if needed to change inside the app, or for export
+* Exported data pass through export layer to make .json file, with data from (changed) state
+* Make beautiful design
+
+Progress:
+* I chose GitHub, since it has good and public API
+* Started with Vanilla JS, but later converted to react-app for numerous  (on 05 Feb 2020)
+* Added dependencies for Bootstrap and FileSave.js, and added functionality for save to JSON file
+* 
