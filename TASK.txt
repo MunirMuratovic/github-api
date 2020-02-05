@@ -1,0 +1,13 @@
+Write a web application that:
+* Reads a collection of data from any rest api source. It can be Facebook, Twitter, github, Office365 or anything you like
+* Present that data on the application front-end (in HTML form), 
+* Make some changes in the collection via web page
+* Save the changes into JSON 
+* Write JSON in a file on disk
+* Bonus: Authentication with REST API source
+
+References used:
+* https://github.com/public-apis/public-apis - List of public API's to use in Software dev
+
+Data flow:
+* Get JSON data and convert it into object usable via JavaScript env
