@@ -14,17 +14,32 @@
   <style>
     .central {
       width: 100%;
-      max-width: 420px;
+      max-width: 500px;
       padding: 15px;
       margin: auto;
+      text-align: center;
     }
+
+    .btn {
+      border-radius: 0 !important;
+    }
+
+    .form-control {
+      border-radius: 0 !important;
+    }
+
   </style>
 </head>
 
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
-  <div class="central">
+  <div class="central mt-3 p-4 rounded border shadow-sm">
+    <h2 class="my-3">GitHub API Editor</h2>
+    <p class="pb-0 mb-0">Enter for example:</p>
+    <p class="font-weight-bold small">https://api.github.com/search/repositories?q=stars:>100000</p>
     <div id="root"></div>
+
+    <p class="pt-4 text-center">(C) 2020 Made by Munir Muratović</p>
   </div>
 
 </body>
