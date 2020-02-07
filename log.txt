@@ -30,4 +30,14 @@ PROGRESS:
 * Deployed my app to github pages, link provided in the description link
 * Updated this document
 
-More info: All commits can be seen in commit history (3-4 commits)
+OTHER INFO:
+How to deploy:
+Since this is only frontend app, it can be bundled by using NPM RUN BUILD in command, which creates bundled files (html, css, js)
+That can be uploaded to server (public_html folder or similar, depending on hosting provider).
+I used GitHub pages for uploading live site, installing gh-pages package:
+- npm install gh-pages --save-dev
+- adding 3 lines of code in package.json (can be seen in commit history)
+- running npm run deploy (command I previously defined)
+
+Tools used: node.js (for it's npm - node package management), create-react-app (via npx), file-saver.js, and bootstrap.
+IDE: Visual Studio Code with various extensions (snippets for JS, react etc.)
