@@ -22,16 +22,16 @@ function App() {
     console.clear();
   }
 
+  function changeUrl(e) {// WORKS GOOD!
+    dataAppState.url = e.target.value;
+    console.log(dataAppState.url);
+  }
+
   async function getRepos() {// WORKS GOOD!
     const response = await fetch(dataAppState.url);
     const result = await response.json();
     dataAppState.textareaRef = result;
     textareaRef.current.value = JSON.stringify(result);
-  }
-
-  function changeUrl(e) {// WORKS GOOD!
-    dataAppState.url = e.target.value;
-    console.log(dataAppState.url);
   }
 
   function updateTextArea(e) {// WORKS 
